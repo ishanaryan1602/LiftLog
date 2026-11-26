@@ -28,5 +28,5 @@ export function DashboardTypewriter() {
     return () => window.clearTimeout(timer);
   }, [deleting, phraseIndex, text]);
 
-  return <span aria-live="polite">{text}<span aria-hidden="true" className="ml-1 inline-block h-[.8em] w-0.5 translate-y-0.5 bg-purple align-baseline motion-safe:animate-pulse" /></span>;
+  return <span aria-live="polite">{text}<span aria-hidden="true"  /></span>;
 }

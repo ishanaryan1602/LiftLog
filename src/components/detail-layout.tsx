@@ -6,11 +6,11 @@ export function DetailLayout({ backHref, backLabel, breadcrumbSection, breadcrum
   if (currentLabel) breadcrumbItems.push({ label: currentLabel });
   if (breadcrumbTail) breadcrumbItems.push({ label: String(breadcrumbTail) });
 
-  return <div className="workout-detail mx-auto w-full">
+  return <div >
     <Breadcrumbs items={breadcrumbItems} />
-    <div className="detail-layout-shell grid items-start gap-5 lg:grid-cols-[16rem_minmax(0,1fr)] xl:grid-cols-[18rem_minmax(0,1fr)]">
-      <aside className="space-y-10 lg:sticky lg:top-6">{summary}{sidebar}</aside>
-      <main className={scrollable ? "detail-layout-main workout-scroll-pane relative min-w-0 flex flex-col overflow-hidden" : "detail-layout-main relative min-w-0"}>{showHeader && <div className="mb-4 flex shrink-0 items-center justify-between gap-4 border-b border-line pb-2"><div><h2 className="text-sm font-semibold">{title}</h2>{subtitle && <p className="mt-1 text-xs text-muted">{subtitle}</p>}</div>{actions}</div>}{children}</main>
+    <div >
+      <aside >{summary}{sidebar}</aside>
+      <main >{showHeader && <div ><div><h2 >{title}</h2>{subtitle && <p >{subtitle}</p>}</div>{actions}</div>}{children}</main>
     </div>
   </div>;
 }

@@ -71,8 +71,8 @@ export default async function WorkoutDetails({ params }: { params: Promise<{ day
   if (!day) notFound();
 
   return <DetailLayout backHref="/training?section=workouts" backLabel="Training" breadcrumbSection="Workouts" breadcrumbSectionHref="/training?section=workouts" currentLabel={day.label} scrollable showHeader={false} sidebar={<SessionSequence exercises={day.exercises} />}>
-    <div className="mb-6 shrink-0"><h1 className="text-2xl font-medium tracking-tight">{day.label}</h1><p className="mt-2 text-sm text-muted">{day.exercises.length} exercises · {prescribedSetTotal(dayKey as keyof typeof WORKOUT_TEMPLATE)} sets</p></div>
+    <div ><h1 >{day.label}</h1><p >{day.exercises.length} exercises · {prescribedSetTotal(dayKey as keyof typeof WORKOUT_TEMPLATE)} sets</p></div>
     <WorkoutExerciseDetails exercises={day.exercises} purposes={purposes} targets={targets} />
-    <div className="workout-action-bar flex justify-end"><Link href={`/workouts/${dayKey}`} className="inline-flex h-10 items-center justify-center rounded-xl bg-purple px-4 text-sm font-semibold text-white transition hover:brightness-110">Log this workout</Link></div>
+    <div ><Link href={`/workouts/${dayKey}`} >Log this workout</Link></div>
   </DetailLayout>;
 }

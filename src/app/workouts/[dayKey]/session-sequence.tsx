@@ -51,7 +51,7 @@ export function SessionSequence({ exercises }: { exercises: ExerciseTemplate[] }
       let activeId = exercises[0]?.id ?? "";
       for (const exercise of exercises) {
         const element = document.getElementById(exercise.id);
-        if (element && !element.classList.contains("hidden") && element.getBoundingClientRect().top <= rootTop + 80) activeId = exercise.id;
+        if (element && element.getBoundingClientRect().top <= rootTop + 80) activeId = exercise.id;
       }
       if (activeId) { setSelectedId(activeId); publishSelection(activeId); }
     };

@@ -309,22 +309,6 @@
       ]
     },
     {
-      "id": "src.components.theme-settings.tsx",
-      "path": "src/components/theme-settings.tsx",
-      "type": "Component",
-      "symbols": [
-        "ThemeSettings"
-      ]
-    },
-    {
-      "id": "src.components.theme-toggle.tsx",
-      "path": "src/components/theme-toggle.tsx",
-      "type": "Component",
-      "symbols": [
-        "ThemeToggle"
-      ]
-    },
-    {
       "id": "src.components.top-nav.tsx",
       "path": "src/components/top-nav.tsx",
       "type": "Component",
@@ -446,7 +430,6 @@
       "path": "src/lib/utils.ts",
       "type": "Service",
       "symbols": [
-        "cn",
         "formatDate"
       ]
     },

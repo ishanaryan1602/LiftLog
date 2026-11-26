@@ -28,9 +28,9 @@ export function DashboardNextSession() {
   const day = WORKOUT_TEMPLATE[dayKey];
 
   return <div>
-    <p className="text-sm text-muted">Your next session</p>
-    <h2 className="mt-3 text-5xl font-semibold tracking-[-.06em] md:text-7xl">{loaded ? day.label : "Loading…"}</h2>
-    <p className="mt-5 max-w-md text-sm leading-6 text-muted">{day ? `${prescribedSetTotal(dayKey)} working sets built around controlled reps, consistent effort, and steady progress.` : "Checking your training rotation…"}</p>
-    <div className="mt-8 flex flex-wrap items-center gap-4"><Link href={`/workouts/${dayKey}`} className="inline-flex rounded-xl bg-purple px-4 py-2.5 text-sm font-medium text-white transition hover:brightness-110">Start workout</Link><Link href="/training" className="text-sm font-medium text-muted transition hover:text-ink">View training →</Link></div>
+    <p >Your next session</p>
+    <h2 >{loaded ? day.label : "Loading…"}</h2>
+    <p >{day ? `${prescribedSetTotal(dayKey)} working sets built around controlled reps, consistent effort, and steady progress.` : "Checking your training rotation…"}</p>
+    <div ><Link href={`/workouts/${dayKey}`} >Start workout</Link><Link href="/training" >View training →</Link></div>
   </div>;
 }

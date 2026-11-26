@@ -187,11 +187,6 @@
     },
     {
       "source": "src.app.settings.page.tsx",
-      "target": "@/components/theme-settings",
-      "type": "IMPORTS"
-    },
-    {
-      "source": "src.app.settings.page.tsx",
       "target": "@/components/ui",
       "type": "IMPORTS"
     },
@@ -341,18 +336,8 @@
       "type": "IMPORTS"
     },
     {
-      "source": "src.components.active-link.tsx",
-      "target": "@/lib/utils",
-      "type": "IMPORTS"
-    },
-    {
       "source": "src.components.detail-layout.tsx",
       "target": "@/components/breadcrumbs",
-      "type": "IMPORTS"
-    },
-    {
-      "source": "src.components.ui.tsx",
-      "target": "@/lib/utils",
       "type": "IMPORTS"
     },
     {

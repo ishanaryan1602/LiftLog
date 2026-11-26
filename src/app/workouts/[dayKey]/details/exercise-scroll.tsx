@@ -19,5 +19,5 @@ export function ExerciseScroll({ children }: { children: React.ReactNode }) {
     return () => resizeObserver.disconnect();
   }, []);
 
-  return <div ref={scrollRef} className="workout-exercise-scroll workout-details-scroll stagger flex-none space-y-4 overflow-visible" style={{ paddingBottom: bottomSpace }}>{children}</div>;
+  return <div ref={scrollRef}  >{children}</div>;
 }

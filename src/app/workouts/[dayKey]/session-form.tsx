@@ -53,23 +53,23 @@ export function SessionForm({ dayKey, exercises, selectedDate, editId }: { dayKe
     setSaving(false);
   }
 
-  return <form action={submit} className="flex min-h-0 flex-1 flex-col pb-0">
+  return <form action={submit} >
     <input type="hidden" name="startedAt" value={selectedDate || format(new Date(), "yyyy-MM-dd")} />
-    <div className="workout-session-content flex min-h-0 flex-1 flex-col justify-center">
-    <div className="workout-log-body-map mb-4"><WorkoutBodyMap exercises={exercises.filter((exercise) => exercise.id === activeExerciseId)} width={224} /></div>
-    <div className="workout-exercise-scroll stagger flex-none space-y-4 overflow-visible">
-      {exercises.map((exercise) => <section id={exercise.id} key={exercise.id} onClick={() => setActiveExerciseId(exercise.id)} onFocusCapture={() => setActiveExerciseId(exercise.id)} className={`workout-input-panel workout-exercise-item overflow-hidden ${exercise.id === activeExerciseId ? "workout-selected" : "hidden"}`}>
-        {exercise.finisher && <div className="flex items-center justify-end gap-4 px-4 py-1 md:px-5"><span className="hidden rounded-md bg-caution/10 px-2 py-1 text-[10px] text-caution sm:inline">Finisher</span></div>}
-        <div className="workout-set-header hidden grid-cols-3 gap-3 px-4 py-2 text-[10px] font-semibold uppercase tracking-[.14em] text-muted md:grid md:px-5"><span>Kg</span><span>Reps</span><span>RIR</span></div>
+    <div >
+    <div ><WorkoutBodyMap exercises={exercises.filter((exercise) => exercise.id === activeExerciseId)} width={224} /></div>
+    <div >
+      {exercises.map((exercise) => <section id={exercise.id} key={exercise.id} onClick={() => setActiveExerciseId(exercise.id)} onFocusCapture={() => setActiveExerciseId(exercise.id)} >
+        {exercise.finisher && <div ><span >Finisher</span></div>}
+        <div ><span>Kg</span><span>Reps</span><span>RIR</span></div>
         <div>
-          {Array.from({ length: exercise.sets }, (_, index) => { const set = initialSets[exercise.id]?.[index]; return <div className="workout-set-row grid grid-cols-3 items-center gap-2 px-4 py-1.5 md:gap-3 md:px-5" key={index}><label><span className="sr-only">{exercise.name} set {index + 1} weight in kg</span><input name={`${exercise.id}-weight-${index}`} type="number" min="0" step="0.5" inputMode="decimal" placeholder="kg" defaultValue={set?.weight ?? ""} className="workout-input" /></label><label><span className="sr-only">{exercise.name} set {index + 1} repetitions</span><input name={`${exercise.id}-reps-${index}`} type="number" min="0" placeholder="reps" defaultValue={set?.repetitions ?? ""} className="workout-input" /></label><label><span className="sr-only">{exercise.name} set {index + 1} reps in reserve</span><input name={`${exercise.id}-rir-${index}`} type="number" min="0" max="5" placeholder="RIR" defaultValue={set?.actualRIR ?? ""} className="workout-input" /></label></div>; })}
-          <div className="flex justify-end px-4 pt-2 md:px-5"><span className="rounded-full border border-line bg-paper/30 px-2.5 py-1 font-mono text-[10px] text-muted">{exercise.sets} {exercise.sets === 1 ? "set" : "sets"}</span></div>
+          {Array.from({ length: exercise.sets }, (_, index) => { const set = initialSets[exercise.id]?.[index]; return <div  key={index}><label><span >{exercise.name} set {index + 1} weight in kg</span><input name={`${exercise.id}-weight-${index}`} type="number" min="0" step="0.5" inputMode="decimal" placeholder="kg" defaultValue={set?.weight ?? ""}  /></label><label><span >{exercise.name} set {index + 1} repetitions</span><input name={`${exercise.id}-reps-${index}`} type="number" min="0" placeholder="reps" defaultValue={set?.repetitions ?? ""}  /></label><label><span >{exercise.name} set {index + 1} reps in reserve</span><input name={`${exercise.id}-rir-${index}`} type="number" min="0" max="5" placeholder="RIR" defaultValue={set?.actualRIR ?? ""}  /></label></div>; })}
+          <div ><span >{exercise.sets} {exercise.sets === 1 ? "set" : "sets"}</span></div>
         </div>
-        {exercise.finisher && <p className="px-4 py-3 text-xs leading-5 text-caution md:px-5">{exercise.finisher}</p>}
+        {exercise.finisher && <p >{exercise.finisher}</p>}
       </section>)}
     </div>
     </div>
-    <div className="workout-action-bar flex flex-wrap items-center justify-end gap-3"><Link href={`/training?section=calendar&workout=${encodeURIComponent(dayKey)}`} className="inline-flex h-10 items-center justify-center gap-2 rounded-xl border border-purple px-3 text-sm font-medium text-purple transition hover:bg-purple/10"><CalendarDays className="h-4 w-4" aria-hidden="true" />{editId ? "Change date" : "Choose date"}</Link><button disabled={saving} className="inline-flex h-10 items-center justify-center rounded-xl bg-purple px-5 text-sm font-semibold text-white shadow-[0_0_24px_hsl(var(--purple)/.2)] transition hover:brightness-110 disabled:cursor-wait disabled:opacity-60">{saving ? (editId ? "Updating workout…" : "Saving workout…") : (editId ? "Update workout" : "Save workout")}</button></div>
-    {message && <p role="status" className="mt-2 text-right text-xs text-positive">{message}</p>}
+    <div ><Link href={`/training?section=calendar&workout=${encodeURIComponent(dayKey)}`} ><CalendarDays  aria-hidden="true" />{editId ? "Change date" : "Choose date"}</Link><button disabled={saving} >{saving ? (editId ? "Updating workout…" : "Saving workout…") : (editId ? "Update workout" : "Save workout")}</button></div>
+    {message && <p role="status" >{message}</p>}
   </form>;
 }

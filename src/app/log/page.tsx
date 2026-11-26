@@ -55,17 +55,17 @@ export default function LogPage() {
     return { date: parseISO(item.measuredAt), meta: format(parseISO(item.measuredAt), "d MMMM yyyy"), measurements: [metric("Body weight", item.bodyWeightKg, "kg"), metric("Chest", item.chestCm, "cm"), metric("Waist", item.waistCm, "cm"), { label: "Arms", value: armsLogged ? `${item.leftArmCm ?? "—"}/${item.rightArmCm ?? "—"} cm` : "—", logged: armsLogged }, { label: "Thighs", value: thighsLogged ? `${item.leftThighCm ?? "—"}/${item.rightThighCm ?? "—"} cm` : "—", logged: thighsLogged }] };
   }).sort((a, b) => a.date.getTime() - b.date.getTime());
 
-  return <div className="training-page flex min-h-0 flex-col">
+  return <div >
     <PageHeader eyebrow="Training" title="Training" icon="training" description="Track workouts and measurements from one place." />
-    <div className="training-layout grid min-h-0 flex-1 gap-8 md:grid-cols-[13rem_minmax(0,1fr)] md:items-start">
+    <div >
       <SectionSidebar items={sections} activeId={active} onSelect={(id) => selectSection(id as LogSection)} ariaLabel="Log sections" />
-      <section aria-label={sections.find(([id]) => id === active)?.[1] ?? "Training"} className="training-content min-w-0">
-        <div key={active} className="min-h-64">
+      <section aria-label={sections.find(([id]) => id === active)?.[1] ?? "Training"} >
+        <div key={active} >
           {active === "workouts" && <WorkoutList />}
           {active === "workout-history" && <WorkoutHistory />}
           {active === "calendar" && <Calendar markedDates={markedDates} measurementDates={markedDates} workoutDates={workouts.flatMap((item) => [item.startedAt, item.completedAt].filter((date): date is string => Boolean(date)).map((date) => parseISO(date)))} entries={calendarEntries} onDateSelect={returnWorkout ? (date) => router.push(`/workouts/${returnWorkout}?date=${format(date, "yyyy-MM-dd")}`) : returnMeasurement ? (date) => router.push(`/measurements?date=${format(date, "yyyy-MM-dd")}`) : undefined} />}
           {active === "measurement-history" && <MeasurementHistory />}
-          {active === "calendar" && loading && <p className="mt-4 text-sm text-muted">Loading saved measurements…</p>}
+          {active === "calendar" && loading && <p >Loading saved measurements…</p>}
         </div>
       </section>
     </div>

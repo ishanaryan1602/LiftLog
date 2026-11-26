@@ -390,26 +390,6 @@
       "feature": "section-sidebar.tsx"
     },
     {
-      "id": "src.components.theme-settings.tsx",
-      "path": "src/components/theme-settings.tsx",
-      "type": "Component",
-      "symbols": [
-        "ThemeSettings"
-      ],
-      "purpose": "Project module",
-      "feature": "theme-settings.tsx"
-    },
-    {
-      "id": "src.components.theme-toggle.tsx",
-      "path": "src/components/theme-toggle.tsx",
-      "type": "Component",
-      "symbols": [
-        "ThemeToggle"
-      ],
-      "purpose": "Project module",
-      "feature": "theme-toggle.tsx"
-    },
-    {
       "id": "src.components.top-nav.tsx",
       "path": "src/components/top-nav.tsx",
       "type": "Component",
@@ -557,7 +537,6 @@
       "path": "src/lib/utils.ts",
       "type": "Service",
       "symbols": [
-        "cn",
         "formatDate"
       ],
       "purpose": "Project module",
@@ -764,11 +743,6 @@
     },
     {
       "source": "src.app.settings.page.tsx",
-      "target": "@/components/theme-settings",
-      "type": "IMPORTS"
-    },
-    {
-      "source": "src.app.settings.page.tsx",
       "target": "@/components/ui",
       "type": "IMPORTS"
     },
@@ -918,18 +892,8 @@
       "type": "IMPORTS"
     },
     {
-      "source": "src.components.active-link.tsx",
-      "target": "@/lib/utils",
-      "type": "IMPORTS"
-    },
-    {
       "source": "src.components.detail-layout.tsx",
       "target": "@/components/breadcrumbs",
-      "type": "IMPORTS"
-    },
-    {
-      "source": "src.components.ui.tsx",
-      "target": "@/lib/utils",
       "type": "IMPORTS"
     },
     {
