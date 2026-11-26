@@ -1,0 +1,2 @@
+import { test, expect } from "@playwright/test";
+test("dashboard and main navigation render",async({page})=>{await page.goto("/");await expect(page.getByRole("heading",{name:"Make the work visible."})).toBeVisible();await page.getByRole("link",{name:"Workouts",exact:true}).click();await expect(page.getByRole("heading",{name:"Workouts"})).toBeVisible();await page.getByRole("link",{name:"Measurements",exact:true}).click();await expect(page.getByRole("heading",{name:"Measurements"})).toBeVisible()});

@@ -1,0 +1,2 @@
+import { readFile } from "node:fs/promises";
+const feature=process.argv[process.argv.indexOf("--feature")+1]??"core";const map=JSON.parse(await readFile(".project-map/modules.json","utf8"));console.log(JSON.stringify({feature,relevantFiles:map.nodes.filter((n:{feature:string})=>n.feature===feature).map((n:{path:string})=>n.path),directDependencies:map.edges.filter((e:{source:string})=>e.source.includes(feature))},null,2));

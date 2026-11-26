@@ -1,0 +1,2 @@
+import type { Config } from "tailwindcss";
+export default { content: ["./src/**/*.{ts,tsx}"], theme: { extend: { colors: { ink: "hsl(var(--ink))", paper: "hsl(var(--paper))", panel: "hsl(var(--panel))", muted: "hsl(var(--muted))", line: "hsl(var(--line))", cyan: "hsl(var(--cyan))", amber: "hsl(var(--amber))", purple: "hsl(var(--purple))", positive: "hsl(var(--positive))", caution: "hsl(var(--caution))", negative: "hsl(var(--negative))" }, fontFamily: { sans: ["var(--font-geist)", "system-ui", "sans-serif"] } } }, plugins: [] } satisfies Config;

@@ -1,0 +1,4 @@
+import { NextResponse } from "next/server";
+import { connectDb } from "@/lib/db";
+import { Measurement, User, WorkoutSession } from "@/lib/models";
+export async function GET(){await connectDb();const user=await User.findOne({displayName:"Local Owner"});if(!user)return NextResponse.json({summary:"No data yet",measurements:[],workouts:[]});const [measurements,workouts]=await Promise.all([Measurement.find({userId:user._id}).sort({measuredAt:1}).lean(),WorkoutSession.find({userId:user._id}).sort({startedAt:1}).lean()]);const first=measurements[0],last=measurements.at(-1);return NextResponse.json({periodStart:first?.measuredAt??null,periodEnd:last?.measuredAt??null,summary:`${workouts.length} workouts and ${measurements.length} measurement records in the selected history.`,measurementChanges:first&&last?{bodyWeightKg:(last.bodyWeightKg??0)-(first.bodyWeightKg??0),waistCm:(last.waistCm??0)-(first.waistCm??0)}:null,workouts:workouts.length})}

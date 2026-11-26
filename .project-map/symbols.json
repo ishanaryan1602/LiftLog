@@ -1,0 +1,464 @@
+{
+  "nodes": [
+    {
+      "id": "src.app.api.ai.workout.route.ts",
+      "path": "src/app/api/ai/workout/route.ts",
+      "type": "Route",
+      "symbols": [
+        "dynamic"
+      ]
+    },
+    {
+      "id": "src.app.api.dashboard.route.ts",
+      "path": "src/app/api/dashboard/route.ts",
+      "type": "Route",
+      "symbols": []
+    },
+    {
+      "id": "src.app.api.export.route.ts",
+      "path": "src/app/api/export/route.ts",
+      "type": "Route",
+      "symbols": []
+    },
+    {
+      "id": "src.app.api.measurements.route.ts",
+      "path": "src/app/api/measurements/route.ts",
+      "type": "Route",
+      "symbols": []
+    },
+    {
+      "id": "src.app.api.reports.route.ts",
+      "path": "src/app/api/reports/route.ts",
+      "type": "Route",
+      "symbols": []
+    },
+    {
+      "id": "src.app.api.restore.route.ts",
+      "path": "src/app/api/restore/route.ts",
+      "type": "Route",
+      "symbols": []
+    },
+    {
+      "id": "src.app.api.workouts.route.ts",
+      "path": "src/app/api/workouts/route.ts",
+      "type": "Route",
+      "symbols": []
+    },
+    {
+      "id": "src.app.dashboard-activity.tsx",
+      "path": "src/app/dashboard-activity.tsx",
+      "type": "Route",
+      "symbols": [
+        "DashboardActivity"
+      ]
+    },
+    {
+      "id": "src.app.dashboard-focus.tsx",
+      "path": "src/app/dashboard-focus.tsx",
+      "type": "Route",
+      "symbols": [
+        "DashboardFocus"
+      ]
+    },
+    {
+      "id": "src.app.dashboard-next-session.tsx",
+      "path": "src/app/dashboard-next-session.tsx",
+      "type": "Route",
+      "symbols": [
+        "DashboardNextSession"
+      ]
+    },
+    {
+      "id": "src.app.dashboard-program-chart.tsx",
+      "path": "src/app/dashboard-program-chart.tsx",
+      "type": "Route",
+      "symbols": [
+        "DashboardProgramChart"
+      ]
+    },
+    {
+      "id": "src.app.dashboard-stats.tsx",
+      "path": "src/app/dashboard-stats.tsx",
+      "type": "Route",
+      "symbols": [
+        "DashboardStats"
+      ]
+    },
+    {
+      "id": "src.app.dashboard-typewriter.tsx",
+      "path": "src/app/dashboard-typewriter.tsx",
+      "type": "Route",
+      "symbols": [
+        "DashboardTypewriter"
+      ]
+    },
+    {
+      "id": "src.app.layout.tsx",
+      "path": "src/app/layout.tsx",
+      "type": "Route",
+      "symbols": [
+        "metadata",
+        "RootLayout"
+      ]
+    },
+    {
+      "id": "src.app.log.page.tsx",
+      "path": "src/app/log/page.tsx",
+      "type": "Route",
+      "symbols": [
+        "LogPage"
+      ]
+    },
+    {
+      "id": "src.app.measurements.history.tsx",
+      "path": "src/app/measurements/history.tsx",
+      "type": "Route",
+      "symbols": [
+        "MeasurementHistory"
+      ]
+    },
+    {
+      "id": "src.app.measurements.measurement-form.tsx",
+      "path": "src/app/measurements/measurement-form.tsx",
+      "type": "Route",
+      "symbols": [
+        "MeasurementForm"
+      ]
+    },
+    {
+      "id": "src.app.measurements.measurement-sequence.tsx",
+      "path": "src/app/measurements/measurement-sequence.tsx",
+      "type": "Route",
+      "symbols": [
+        "MeasurementSequence"
+      ]
+    },
+    {
+      "id": "src.app.measurements.page.tsx",
+      "path": "src/app/measurements/page.tsx",
+      "type": "Route",
+      "symbols": [
+        "Measurements"
+      ]
+    },
+    {
+      "id": "src.app.page.tsx",
+      "path": "src/app/page.tsx",
+      "type": "Route",
+      "symbols": [
+        "Dashboard"
+      ]
+    },
+    {
+      "id": "src.app.settings.page.tsx",
+      "path": "src/app/settings/page.tsx",
+      "type": "Route",
+      "symbols": [
+        "Settings"
+      ]
+    },
+    {
+      "id": "src.app.training.page.tsx",
+      "path": "src/app/training/page.tsx",
+      "type": "Route",
+      "symbols": []
+    },
+    {
+      "id": "src.app.workouts.[dayKey].details.exercise-scroll.tsx",
+      "path": "src/app/workouts/[dayKey]/details/exercise-scroll.tsx",
+      "type": "Route",
+      "symbols": [
+        "ExerciseScroll"
+      ]
+    },
+    {
+      "id": "src.app.workouts.[dayKey].details.page.tsx",
+      "path": "src/app/workouts/[dayKey]/details/page.tsx",
+      "type": "Route",
+      "symbols": []
+    },
+    {
+      "id": "src.app.workouts.[dayKey].details.workout-exercise-details.tsx",
+      "path": "src/app/workouts/[dayKey]/details/workout-exercise-details.tsx",
+      "type": "Route",
+      "symbols": [
+        "WorkoutExerciseDetails"
+      ]
+    },
+    {
+      "id": "src.app.workouts.[dayKey].history.[id].analysis.analysis-charts.tsx",
+      "path": "src/app/workouts/[dayKey]/history/[id]/analysis/analysis-charts.tsx",
+      "type": "Route",
+      "symbols": [
+        "AnalysisCharts"
+      ]
+    },
+    {
+      "id": "src.app.workouts.[dayKey].history.[id].analysis.page.tsx",
+      "path": "src/app/workouts/[dayKey]/history/[id]/analysis/page.tsx",
+      "type": "Route",
+      "symbols": [
+        "WorkoutAnalysisPage"
+      ]
+    },
+    {
+      "id": "src.app.workouts.[dayKey].history.[id].page.tsx",
+      "path": "src/app/workouts/[dayKey]/history/[id]/page.tsx",
+      "type": "Route",
+      "symbols": [
+        "WorkoutHistoryDetail"
+      ]
+    },
+    {
+      "id": "src.app.workouts.[dayKey].history.[id].workout-ai-summary.tsx",
+      "path": "src/app/workouts/[dayKey]/history/[id]/workout-ai-summary.tsx",
+      "type": "Route",
+      "symbols": [
+        "WorkoutAiSummary"
+      ]
+    },
+    {
+      "id": "src.app.workouts.[dayKey].page.tsx",
+      "path": "src/app/workouts/[dayKey]/page.tsx",
+      "type": "Route",
+      "symbols": []
+    },
+    {
+      "id": "src.app.workouts.[dayKey].session-form.tsx",
+      "path": "src/app/workouts/[dayKey]/session-form.tsx",
+      "type": "Route",
+      "symbols": [
+        "SessionForm"
+      ]
+    },
+    {
+      "id": "src.app.workouts.[dayKey].session-sequence.tsx",
+      "path": "src/app/workouts/[dayKey]/session-sequence.tsx",
+      "type": "Route",
+      "symbols": [
+        "SessionSequence"
+      ]
+    },
+    {
+      "id": "src.app.workouts.history.tsx",
+      "path": "src/app/workouts/history.tsx",
+      "type": "Route",
+      "symbols": [
+        "WorkoutHistory"
+      ]
+    },
+    {
+      "id": "src.app.workouts.page.tsx",
+      "path": "src/app/workouts/page.tsx",
+      "type": "Route",
+      "symbols": [
+        "WorkoutsRedirect"
+      ]
+    },
+    {
+      "id": "src.app.workouts.workout-list.tsx",
+      "path": "src/app/workouts/workout-list.tsx",
+      "type": "Route",
+      "symbols": [
+        "WorkoutList"
+      ]
+    },
+    {
+      "id": "src.components.active-link.tsx",
+      "path": "src/components/active-link.tsx",
+      "type": "Component",
+      "symbols": [
+        "ActiveLink"
+      ]
+    },
+    {
+      "id": "src.components.breadcrumbs.tsx",
+      "path": "src/components/breadcrumbs.tsx",
+      "type": "Component",
+      "symbols": [
+        "BreadcrumbItem",
+        "Breadcrumbs"
+      ]
+    },
+    {
+      "id": "src.components.calendar.tsx",
+      "path": "src/components/calendar.tsx",
+      "type": "Component",
+      "symbols": [
+        "CalendarProps",
+        "CalendarLayoutToggle",
+        "Calendar",
+        "CalendarField"
+      ]
+    },
+    {
+      "id": "src.components.detail-layout.tsx",
+      "path": "src/components/detail-layout.tsx",
+      "type": "Component",
+      "symbols": [
+        "DetailLayout"
+      ]
+    },
+    {
+      "id": "src.components.section-sidebar.tsx",
+      "path": "src/components/section-sidebar.tsx",
+      "type": "Component",
+      "symbols": [
+        "SectionSidebarItem",
+        "SectionSidebar"
+      ]
+    },
+    {
+      "id": "src.components.theme-settings.tsx",
+      "path": "src/components/theme-settings.tsx",
+      "type": "Component",
+      "symbols": [
+        "ThemeSettings"
+      ]
+    },
+    {
+      "id": "src.components.theme-toggle.tsx",
+      "path": "src/components/theme-toggle.tsx",
+      "type": "Component",
+      "symbols": [
+        "ThemeToggle"
+      ]
+    },
+    {
+      "id": "src.components.top-nav.tsx",
+      "path": "src/components/top-nav.tsx",
+      "type": "Component",
+      "symbols": [
+        "TopNav"
+      ]
+    },
+    {
+      "id": "src.components.ui.tsx",
+      "path": "src/components/ui.tsx",
+      "type": "Component",
+      "symbols": [
+        "Button",
+        "Input",
+        "Textarea",
+        "Card",
+        "Badge",
+        "PageHeader"
+      ]
+    },
+    {
+      "id": "src.features.workouts.body-map.tsx",
+      "path": "src/features/workouts/body-map.tsx",
+      "type": "Service",
+      "symbols": [
+        "WorkoutBodyMap"
+      ]
+    },
+    {
+      "id": "src.features.workouts.data.muscles.test.ts",
+      "path": "src/features/workouts/data/muscles.test.ts",
+      "type": "Test",
+      "symbols": []
+    },
+    {
+      "id": "src.features.workouts.data.muscles.ts",
+      "path": "src/features/workouts/data/muscles.ts",
+      "type": "Service",
+      "symbols": [
+        "MuscleGroup",
+        "MuscleTarget",
+        "muscleGroupsForExercises",
+        "muscleHighlightsForExercises"
+      ]
+    },
+    {
+      "id": "src.features.workouts.data.template.test.ts",
+      "path": "src/features/workouts/data/template.test.ts",
+      "type": "Test",
+      "symbols": []
+    },
+    {
+      "id": "src.features.workouts.data.template.ts",
+      "path": "src/features/workouts/data/template.ts",
+      "type": "Service",
+      "symbols": [
+        "ExerciseTemplate",
+        "WORKOUT_TEMPLATE",
+        "prescribedSetTotal"
+      ]
+    },
+    {
+      "id": "src.features.workouts.schemas.ts",
+      "path": "src/features/workouts/schemas.ts",
+      "type": "Schema",
+      "symbols": [
+        "loggedSetSchema",
+        "measurementSchema"
+      ]
+    },
+    {
+      "id": "src.lib.config.ts",
+      "path": "src/lib/config.ts",
+      "type": "Service",
+      "symbols": [
+        "env"
+      ]
+    },
+    {
+      "id": "src.lib.db.ts",
+      "path": "src/lib/db.ts",
+      "type": "Service",
+      "symbols": []
+    },
+    {
+      "id": "src.lib.gemini-analysis.ts",
+      "path": "src/lib/gemini-analysis.ts",
+      "type": "Service",
+      "symbols": [
+        "workoutAnalysisSchema",
+        "WorkoutAnalysis",
+        "GeminiRequestError",
+        "hashSource",
+        "buildWorkoutAnalysisSource"
+      ]
+    },
+    {
+      "id": "src.lib.logger.index.ts",
+      "path": "src/lib/logger/index.ts",
+      "type": "Service",
+      "symbols": [
+        "logger"
+      ]
+    },
+    {
+      "id": "src.lib.models.ts",
+      "path": "src/lib/models.ts",
+      "type": "DatabaseModel",
+      "symbols": [
+        "User",
+        "WorkoutTemplate",
+        "WorkoutSession",
+        "Measurement",
+        "AnalysisReport"
+      ]
+    },
+    {
+      "id": "src.lib.utils.ts",
+      "path": "src/lib/utils.ts",
+      "type": "Service",
+      "symbols": [
+        "cn",
+        "formatDate"
+      ]
+    },
+    {
+      "id": "src.types.index.ts",
+      "path": "src/types/index.ts",
+      "type": "Service",
+      "symbols": [
+        "DayKey",
+        "Status",
+        "Measurement"
+      ]
+    }
+  ]
+}

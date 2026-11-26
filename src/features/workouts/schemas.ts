@@ -1,0 +1,3 @@
+import { z } from "zod";
+export const loggedSetSchema=z.object({setNumber:z.number().int().positive(),weight:z.number().min(0),repetitions:z.number().int().min(0),actualRIR:z.number().min(0).max(10).optional(),completed:z.boolean()});
+export const measurementSchema=z.object({measuredAt:z.coerce.date(),bodyWeightKg:z.number().positive().optional(),leftArmCm:z.number().positive().optional(),rightArmCm:z.number().positive().optional(),chestCm:z.number().positive().optional(),waistCm:z.number().positive().optional(),shouldersCm:z.number().positive().optional(),leftThighCm:z.number().positive().optional(),rightThighCm:z.number().positive().optional()}).refine((value)=>Object.keys(value).some((key)=>key.endsWith("Kg")||key.endsWith("Cm")),"Enter at least one measurement");

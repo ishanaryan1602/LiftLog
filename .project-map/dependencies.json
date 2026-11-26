@@ -1,0 +1,404 @@
+{
+  "edges": [
+    {
+      "source": "src.app.api.ai.workout.route.ts",
+      "target": "@/lib/gemini-analysis",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.api.ai.workout.route.ts",
+      "target": "@/lib/db",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.api.ai.workout.route.ts",
+      "target": "@/lib/models",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.api.ai.workout.route.ts",
+      "target": "@/lib/logger",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.api.dashboard.route.ts",
+      "target": "@/lib/db",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.api.dashboard.route.ts",
+      "target": "@/lib/models",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.api.export.route.ts",
+      "target": "@/lib/db",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.api.export.route.ts",
+      "target": "@/lib/models",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.api.measurements.route.ts",
+      "target": "@/lib/db",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.api.measurements.route.ts",
+      "target": "@/lib/models",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.api.measurements.route.ts",
+      "target": "@/features/workouts/schemas",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.api.measurements.route.ts",
+      "target": "@/lib/logger",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.api.reports.route.ts",
+      "target": "@/lib/db",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.api.reports.route.ts",
+      "target": "@/lib/models",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.api.restore.route.ts",
+      "target": "@/lib/db",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.api.restore.route.ts",
+      "target": "@/lib/models",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.api.workouts.route.ts",
+      "target": "@/lib/db",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.api.workouts.route.ts",
+      "target": "@/lib/models",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.api.workouts.route.ts",
+      "target": "@/lib/logger",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.dashboard-focus.tsx",
+      "target": "@/features/workouts/data/template",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.dashboard-next-session.tsx",
+      "target": "@/features/workouts/data/template",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.dashboard-program-chart.tsx",
+      "target": "@/features/workouts/data/template",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.layout.tsx",
+      "target": "@/components/top-nav",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.log.page.tsx",
+      "target": "@/components/calendar",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.log.page.tsx",
+      "target": "@/components/ui",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.log.page.tsx",
+      "target": "../workouts/workout-list",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.log.page.tsx",
+      "target": "../workouts/history",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.log.page.tsx",
+      "target": "../measurements/history",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.log.page.tsx",
+      "target": "@/components/section-sidebar",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.measurements.measurement-sequence.tsx",
+      "target": "@/components/section-sidebar",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.measurements.page.tsx",
+      "target": "./measurement-form",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.measurements.page.tsx",
+      "target": "@/components/detail-layout",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.measurements.page.tsx",
+      "target": "./measurement-sequence",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.page.tsx",
+      "target": "./dashboard-stats",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.page.tsx",
+      "target": "./dashboard-focus",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.page.tsx",
+      "target": "./dashboard-program-chart",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.page.tsx",
+      "target": "./dashboard-next-session",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.settings.page.tsx",
+      "target": "@/components/theme-settings",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.settings.page.tsx",
+      "target": "@/components/ui",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.settings.page.tsx",
+      "target": "@/components/section-sidebar",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.training.page.tsx",
+      "target": "../log/page",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].details.page.tsx",
+      "target": "@/features/workouts/data/template",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].details.page.tsx",
+      "target": "@/components/detail-layout",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].details.page.tsx",
+      "target": "../session-sequence",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].details.page.tsx",
+      "target": "./workout-exercise-details",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].details.workout-exercise-details.tsx",
+      "target": "@/features/workouts/data/template",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].details.workout-exercise-details.tsx",
+      "target": "@/features/workouts/body-map",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].details.workout-exercise-details.tsx",
+      "target": "./exercise-scroll",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].history.[id].analysis.analysis-charts.tsx",
+      "target": "@/components/ui",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].history.[id].analysis.page.tsx",
+      "target": "@/components/breadcrumbs",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].history.[id].analysis.page.tsx",
+      "target": "../workout-ai-summary",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].history.[id].analysis.page.tsx",
+      "target": "@/features/workouts/data/template",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].history.[id].analysis.page.tsx",
+      "target": "./analysis-charts",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].history.[id].page.tsx",
+      "target": "@/components/detail-layout",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].history.[id].page.tsx",
+      "target": "@/features/workouts/data/template",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].history.[id].page.tsx",
+      "target": "@/features/workouts/body-map",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].history.[id].page.tsx",
+      "target": "../../session-sequence",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].history.[id].page.tsx",
+      "target": "@/components/ui",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].history.[id].workout-ai-summary.tsx",
+      "target": "@/components/ui",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].page.tsx",
+      "target": "@/features/workouts/data/template",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].page.tsx",
+      "target": "./session-form",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].page.tsx",
+      "target": "./session-sequence",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].page.tsx",
+      "target": "@/components/detail-layout",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].session-form.tsx",
+      "target": "@/features/workouts/data/template",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].session-form.tsx",
+      "target": "@/features/workouts/body-map",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].session-sequence.tsx",
+      "target": "@/features/workouts/data/template",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.[dayKey].session-sequence.tsx",
+      "target": "@/components/section-sidebar",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.app.workouts.workout-list.tsx",
+      "target": "@/features/workouts/data/template",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.components.active-link.tsx",
+      "target": "@/lib/utils",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.components.detail-layout.tsx",
+      "target": "@/components/breadcrumbs",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.components.ui.tsx",
+      "target": "@/lib/utils",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.features.workouts.body-map.tsx",
+      "target": "./data/template",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.features.workouts.body-map.tsx",
+      "target": "./data/muscles",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.features.workouts.data.muscles.test.ts",
+      "target": "./muscles",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.features.workouts.data.muscles.ts",
+      "target": "./template",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.features.workouts.data.template.test.ts",
+      "target": "./template",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.features.workouts.data.template.ts",
+      "target": "@/types",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.lib.db.ts",
+      "target": "./config",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.lib.db.ts",
+      "target": "./logger",
+      "type": "IMPORTS"
+    },
+    {
+      "source": "src.lib.gemini-analysis.ts",
+      "target": "@/lib/config",
+      "type": "IMPORTS"
+    }
+  ]
+}

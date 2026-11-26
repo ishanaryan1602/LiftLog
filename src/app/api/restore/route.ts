@@ -1,0 +1,7 @@
+import { NextResponse } from "next/server";
+import { z } from "zod";
+import { connectDb } from "@/lib/db";
+import { Measurement, User, WorkoutSession } from "@/lib/models";
+const measurement=z.object({measuredAt:z.coerce.date(),bodyWeightKg:z.number().optional(),leftArmCm:z.number().optional(),rightArmCm:z.number().optional(),chestCm:z.number().optional(),waistCm:z.number().optional(),shouldersCm:z.number().optional(),leftThighCm:z.number().optional(),rightThighCm:z.number().optional(),notes:z.string().optional()});
+const payload=z.object({measurements:z.array(measurement).default([]),workouts:z.array(z.record(z.unknown())).default([])});
+export async function POST(request:Request){try{const data=payload.parse(await request.json());await connectDb();const user=await User.findOne({displayName:"Local Owner"});if(!user)return NextResponse.json({error:"Run the seed command first"},{status:400});const inserted=await Measurement.insertMany(data.measurements.map((item)=>({...item,userId:user._id})),{ordered:true});const workouts=data.workouts.filter((item)=>typeof item.dayKey==="string"&&Array.isArray(item.exercises)).map((item)=>({...item,userId:user._id,status:item.status??"completed"}));const restoredWorkouts=workouts.length?await WorkoutSession.insertMany(workouts,{ordered:false}):[];return NextResponse.json({measurements:inserted.length,workouts:restoredWorkouts.length})}catch{return NextResponse.json({error:"Invalid restore payload; no data was imported."},{status:400})}}
